@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA241A049C73C7AE4187322 /* Pods_DoFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */; };
 		F447191B299E971300B6C3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191A299E971300B6C3DA /* AppDelegate.swift */; };
 		F447191D299E971300B6C3DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191C299E971300B6C3DA /* SceneDelegate.swift */; };
 		F447191F299E971300B6C3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191E299E971300B6C3DA /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1894C2760D0539F33F523FA /* Pods-DoFU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoFU.release.xcconfig"; path = "Target Support Files/Pods-DoFU/Pods-DoFU.release.xcconfig"; sourceTree = "<group>"; };
+		E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78FC940AE2C2F71F3D76188 /* Pods-DoFU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoFU.debug.xcconfig"; path = "Target Support Files/Pods-DoFU/Pods-DoFU.debug.xcconfig"; sourceTree = "<group>"; };
 		F4471917299E971300B6C3DA /* DoFU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoFU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F447191A299E971300B6C3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F447191C299E971300B6C3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA241A049C73C7AE4187322 /* Pods_DoFU.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D97A2E5556F994521D5B64E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E0F2ACC8521E7EABFB1A1B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E78FC940AE2C2F71F3D76188 /* Pods-DoFU.debug.xcconfig */,
+				C1894C2760D0539F33F523FA /* Pods-DoFU.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F447190E299E971300B6C3DA = {
 			isa = PBXGroup;
 			children = (
 				F4471919299E971300B6C3DA /* DoFU */,
+				F4471928299E971500B6C3DA /* Info.plist */,
 				F4471918299E971300B6C3DA /* Products */,
+				3E0F2ACC8521E7EABFB1A1B7 /* Pods */,
+				3D97A2E5556F994521D5B64E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,30 @@
 		F4471919299E971300B6C3DA /* DoFU */ = {
 			isa = PBXGroup;
 			children = (
-				F447191A299E971300B6C3DA /* AppDelegate.swift */,
-				F447191C299E971300B6C3DA /* SceneDelegate.swift */,
 				F447191E299E971300B6C3DA /* ViewController.swift */,
-				F4471920299E971300B6C3DA /* Main.storyboard */,
-				F4471923299E971500B6C3DA /* Assets.xcassets */,
-				F4471925299E971500B6C3DA /* LaunchScreen.storyboard */,
-				F4471928299E971500B6C3DA /* Info.plist */,
+				F44EE84A29B24CAF005559A7 /* Views */,
+				F471080729B24292004A2C6F /* SupportingFiles */,
 			);
 			path = DoFU;
+			sourceTree = "<group>";
+		};
+		F44EE84A29B24CAF005559A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4471920299E971300B6C3DA /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F471080729B24292004A2C6F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F447191C299E971300B6C3DA /* SceneDelegate.swift */,
+				F447191A299E971300B6C3DA /* AppDelegate.swift */,
+				F4471923299E971500B6C3DA /* Assets.xcassets */,
+				F4471925299E971500B6C3DA /* LaunchScreen.storyboard */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F447192B299E971500B6C3DA /* Build configuration list for PBXNativeTarget "DoFU" */;
 			buildPhases = (
+				2E62B36357C2B7F843E3E7D9 /* [CP] Check Pods Manifest.lock */,
 				F4471913299E971300B6C3DA /* Sources */,
 				F4471914299E971300B6C3DA /* Frameworks */,
 				F4471915299E971300B6C3DA /* Resources */,
+				357355B9B8698EA37C041A33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,6 +153,8 @@
 				Base,
 			);
 			mainGroup = F447190E299E971300B6C3DA;
+			packageReferences = (
+			);
 			productRefGroup = F4471918299E971300B6C3DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,6 +176,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E62B36357C2B7F843E3E7D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoFU-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357355B9B8698EA37C041A33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoFU/Pods-DoFU-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoFU/Pods-DoFU-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoFU/Pods-DoFU-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4471913299E971300B6C3DA /* Sources */ = {
@@ -282,6 +368,7 @@
 		};
 		F447192C299E971500B6C3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78FC940AE2C2F71F3D76188 /* Pods-DoFU.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Y89R8Q9VV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DoFU/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,6 +401,7 @@
 		};
 		F447192D299E971500B6C3DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1894C2760D0539F33F523FA /* Pods-DoFU.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4Y89R8Q9VV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DoFU/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
