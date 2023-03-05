@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		BEA241A049C73C7AE4187322 /* Pods_DoFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */; };
 		F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438BE0129B510910097EFA5 /* CalcViewConroller.swift */; };
+		F438BE0429B529C80097EFA5 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438BE0329B529C80097EFA5 /* ItemsViewController.swift */; };
+		F438BE0629B529FA0097EFA5 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438BE0529B529FA0097EFA5 /* ChartsViewController.swift */; };
 		F447191B299E971300B6C3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191A299E971300B6C3DA /* AppDelegate.swift */; };
 		F447191D299E971300B6C3DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191C299E971300B6C3DA /* SceneDelegate.swift */; };
 		F447191F299E971300B6C3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191E299E971300B6C3DA /* ViewController.swift */; };
 		F4471922299E971300B6C3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4471920299E971300B6C3DA /* Main.storyboard */; };
 		F4471924299E971500B6C3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4471923299E971500B6C3DA /* Assets.xcassets */; };
 		F4471927299E971500B6C3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4471925299E971500B6C3DA /* LaunchScreen.storyboard */; };
+		F44719A929B52D6E00C5DBC1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44719A829B52D6E00C5DBC1 /* TabBarController.swift */; };
 		F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,8 @@
 		E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78FC940AE2C2F71F3D76188 /* Pods-DoFU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoFU.debug.xcconfig"; path = "Target Support Files/Pods-DoFU/Pods-DoFU.debug.xcconfig"; sourceTree = "<group>"; };
 		F438BE0129B510910097EFA5 /* CalcViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewConroller.swift; sourceTree = "<group>"; };
+		F438BE0329B529C80097EFA5 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		F438BE0529B529FA0097EFA5 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
 		F4471917299E971300B6C3DA /* DoFU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoFU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F447191A299E971300B6C3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F447191C299E971300B6C3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,7 @@
 		F4471923299E971500B6C3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4471926299E971500B6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4471928299E971500B6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44719A829B52D6E00C5DBC1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "liberate-ukraine.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,9 @@
 			children = (
 				F447191E299E971300B6C3DA /* ViewController.swift */,
 				F438BE0129B510910097EFA5 /* CalcViewConroller.swift */,
+				F438BE0329B529C80097EFA5 /* ItemsViewController.swift */,
+				F438BE0529B529FA0097EFA5 /* ChartsViewController.swift */,
+				F44719A829B52D6E00C5DBC1 /* TabBarController.swift */,
 				F44EE84A29B24CAF005559A7 /* Views */,
 				F471080729B24292004A2C6F /* SupportingFiles */,
 			);
@@ -231,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F438BE0429B529C80097EFA5 /* ItemsViewController.swift in Sources */,
 				F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */,
 				F447191F299E971300B6C3DA /* ViewController.swift in Sources */,
+				F438BE0629B529FA0097EFA5 /* ChartsViewController.swift in Sources */,
+				F44719A929B52D6E00C5DBC1 /* TabBarController.swift in Sources */,
 				F447191B299E971300B6C3DA /* AppDelegate.swift in Sources */,
 				F447191D299E971300B6C3DA /* SceneDelegate.swift in Sources */,
 			);

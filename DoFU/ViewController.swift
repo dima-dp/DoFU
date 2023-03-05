@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     
     
-    
+// MARK -> Animation function
     func setupStartingAnimation() {
         animationView = .init(name: "liberate-ukraine")
         animationView.frame = view.frame
@@ -27,12 +27,12 @@ class ViewController: UIViewController {
         animationView.animationSpeed = 1
         view.addSubview(animationView)
         
-        animationView.play(toProgress: 0.983) {  [weak self] _ in
+        animationView.play(toProgress: 0.983) {  [weak self] _ in  //0.983 - 98,3% of animation playing
             self?.moveToCalcVC()
         }
     }
     
-    
+// MARK -> Function to push CalcViewController with size and alpha animations
     private func moveToCalcVC() {
         UIView.animate(withDuration: 1) { [weak self] in
             let size = (self?.animationView.frame.size.width)! * 7
@@ -43,12 +43,16 @@ class ViewController: UIViewController {
             
             self?.animationView.alpha = 0
             
-        } completion: { done in
+        } completion: { [weak self] done in
             if done {
-                let calcVC = CalcViewConroller()
-                calcVC.modalTransitionStyle = .crossDissolve
-                calcVC.modalPresentationStyle = .fullScreen
-                self.present(calcVC, animated: true)
+                let storyboardName = "Main"
+                let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+                let identifier = "TabBarController"
+                let tabBarcontroller = storyboard.instantiateViewController(withIdentifier: identifier)
+                tabBarcontroller.modalTransitionStyle = .crossDissolve
+                tabBarcontroller.modalPresentationStyle = .fullScreen
+                self?.present(tabBarcontroller, animated: true)
+                
             }
         }
     }

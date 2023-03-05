@@ -1,5 +1,5 @@
 //
-//  CalcViewConroller.swift
+//  ChartsViewController.swift
 //  DoFU
 //
 //  Created by Home on 05.03.2023.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CalcViewConroller: UIViewController {
+class ChartsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .gray
+        // Do any additional setup after loading the view.
     }
     
 
