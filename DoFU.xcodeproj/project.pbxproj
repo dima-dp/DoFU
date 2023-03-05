@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BEA241A049C73C7AE4187322 /* Pods_DoFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */; };
+		F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F438BE0129B510910097EFA5 /* CalcViewConroller.swift */; };
 		F447191B299E971300B6C3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191A299E971300B6C3DA /* AppDelegate.swift */; };
 		F447191D299E971300B6C3DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191C299E971300B6C3DA /* SceneDelegate.swift */; };
 		F447191F299E971300B6C3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447191E299E971300B6C3DA /* ViewController.swift */; };
 		F4471922299E971300B6C3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4471920299E971300B6C3DA /* Main.storyboard */; };
 		F4471924299E971500B6C3DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4471923299E971500B6C3DA /* Assets.xcassets */; };
 		F4471927299E971500B6C3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4471925299E971500B6C3DA /* LaunchScreen.storyboard */; };
+		F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1894C2760D0539F33F523FA /* Pods-DoFU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoFU.release.xcconfig"; path = "Target Support Files/Pods-DoFU/Pods-DoFU.release.xcconfig"; sourceTree = "<group>"; };
 		E5DAB6DAA9EF47B08CE43ABA /* Pods_DoFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78FC940AE2C2F71F3D76188 /* Pods-DoFU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoFU.debug.xcconfig"; path = "Target Support Files/Pods-DoFU/Pods-DoFU.debug.xcconfig"; sourceTree = "<group>"; };
+		F438BE0129B510910097EFA5 /* CalcViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewConroller.swift; sourceTree = "<group>"; };
 		F4471917299E971300B6C3DA /* DoFU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoFU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F447191A299E971300B6C3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F447191C299E971300B6C3DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		F4471923299E971500B6C3DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4471926299E971500B6C3DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4471928299E971500B6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "liberate-ukraine.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F447191E299E971300B6C3DA /* ViewController.swift */,
+				F438BE0129B510910097EFA5 /* CalcViewConroller.swift */,
 				F44EE84A29B24CAF005559A7 /* Views */,
 				F471080729B24292004A2C6F /* SupportingFiles */,
 			);
@@ -99,6 +104,7 @@
 		F471080729B24292004A2C6F /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */,
 				F447191C299E971300B6C3DA /* SceneDelegate.swift */,
 				F447191A299E971300B6C3DA /* AppDelegate.swift */,
 				F4471923299E971500B6C3DA /* Assets.xcassets */,
@@ -170,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4471927299E971500B6C3DA /* LaunchScreen.storyboard in Resources */,
+				F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */,
 				F4471924299E971500B6C3DA /* Assets.xcassets in Resources */,
 				F4471922299E971300B6C3DA /* Main.storyboard in Resources */,
 			);
@@ -224,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */,
 				F447191F299E971300B6C3DA /* ViewController.swift in Sources */,
 				F447191B299E971300B6C3DA /* AppDelegate.swift in Sources */,
 				F447191D299E971300B6C3DA /* SceneDelegate.swift in Sources */,
