@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <accessibilityOverrides dynamicTypePreference="8"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoFU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController id="yT9-gX-ucw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ydz-8b-Dzp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="charts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wmx-iu-RyV">
@@ -55,7 +55,7 @@
             <objects>
                 <viewController storyboardIdentifier="ItemsViewController" id="0MH-lj-uGw" customClass="ItemsViewController" customModule="DoFU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kDv-Xq-Kyh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTU-XF-5Lo">
@@ -80,21 +80,21 @@
             <objects>
                 <viewController storyboardIdentifier="CalcViewConroller" id="QhU-zi-2JE" customClass="CalcViewConroller" customModule="DoFU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npQ-dn-BVT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-Gu-0Zg" userLabel="Display 0">
-                                <rect key="frame" x="12" y="103" width="369" height="50"/>
+                                <rect key="frame" x="14.666666666666657" y="91" width="456" height="52.666666666666657"/>
                                 <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BF1-Ji-ObU" userLabel="ButtonsView">
-                                <rect key="frame" x="217" y="156" width="166" height="186"/>
+                                <rect key="frame" x="270.33333333333331" y="146.66666666666669" width="205" height="196.66666666666669"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJd-Tw-uxD">
-                                        <rect key="frame" x="57.333333333333314" y="3" width="51.333333333333343" height="58"/>
+                                        <rect key="frame" x="70.333333333333371" y="2.9999999999999964" width="64.333333333333314" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="2">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -102,7 +102,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-g8-ule">
-                                        <rect key="frame" x="111.66666666666667" y="3" width="51.333333333333329" height="58"/>
+                                        <rect key="frame" x="137.66666666666669" y="2.9999999999999964" width="64.333333333333314" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="3">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
@@ -110,7 +110,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otJ-1y-Jib">
-                                        <rect key="frame" x="57.333333333333314" y="125" width="51.333333333333343" height="58"/>
+                                        <rect key="frame" x="70.333333333333371" y="132.00000000000003" width="64.333333333333314" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="8">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -118,7 +118,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SP5-d3-qp2">
-                                        <rect key="frame" x="3" y="64" width="51.333333333333336" height="58"/>
+                                        <rect key="frame" x="3" y="67.666666666666686" width="64.333333333333329" height="61.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="4">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -126,7 +126,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ml-s1-edl">
-                                        <rect key="frame" x="111.66666666666667" y="64" width="51.333333333333329" height="58"/>
+                                        <rect key="frame" x="137.66666666666669" y="67.666666666666686" width="64.333333333333314" height="61.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="6">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -134,7 +134,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-X9-UT0">
-                                        <rect key="frame" x="111.66666666666667" y="125" width="51.333333333333329" height="58"/>
+                                        <rect key="frame" x="137.66666666666669" y="132.00000000000003" width="64.333333333333314" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="9">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -142,7 +142,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AP-yG-AJB">
-                                        <rect key="frame" x="3" y="125" width="51.333333333333336" height="58"/>
+                                        <rect key="frame" x="3" y="132.00000000000003" width="64.333333333333329" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="7">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -150,7 +150,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYm-Zm-5I5">
-                                        <rect key="frame" x="3" y="3" width="51.333333333333336" height="58"/>
+                                        <rect key="frame" x="3" y="2.9999999999999964" width="64.333333333333329" height="61.666666666666657"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="1">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -158,7 +158,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0g-T3-lTW">
-                                        <rect key="frame" x="57.333333333333314" y="64" width="51.333333333333343" height="58"/>
+                                        <rect key="frame" x="70.333333333333371" y="67.666666666666686" width="64.333333333333314" height="61.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="5">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -211,7 +211,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-RI-WIe">
-                                <rect key="frame" x="221" y="402" width="160" height="55"/>
+                                <rect key="frame" x="275.66666666666669" y="406.33333333333331" width="197.66666666666669" height="58.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save">
                                     <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="49"/>
@@ -219,62 +219,88 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRE-8x-Evg" userLabel="LabelsView">
-                                <rect key="frame" x="10" y="168" width="204" height="165"/>
+                                <rect key="frame" x="15.333333333333343" y="158.66666666666663" width="252.00000000000003" height="174.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total donated:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPd-dO-aSs">
-                                        <rect key="frame" x="0.0" y="120" width="135" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total donated:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPd-dO-aSs">
+                                        <rect key="frame" x="0.0" y="125.00000000000004" width="135" height="25.666666666666671"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8B-E0-RQT">
-                                        <rect key="frame" x="0.0" y="144" width="154" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8B-E0-RQT">
+                                        <rect key="frame" x="0.0" y="150.66666666666666" width="154" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donated last month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-X1-moS">
-                                        <rect key="frame" x="0.0" y="0.0" width="191" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated last month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-X1-moS">
+                                        <rect key="frame" x="0.0" y="0.0" width="236" height="25.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To donate this month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl">
-                                        <rect key="frame" x="0.0" y="64" width="204" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To donate this month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl">
+                                        <rect key="frame" x="0.0" y="66.666666666666686" width="204" height="25.333333333333329"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-zW-Cp1">
-                                        <rect key="frame" x="0.0" y="24" width="191" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-zW-Cp1">
+                                        <rect key="frame" x="0.0" y="25.333333333333343" width="191" height="22.333333333333329"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iho-07-4Tu">
-                                        <rect key="frame" x="0.0" y="88" width="154" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iho-07-4Tu">
+                                        <rect key="frame" x="0.0" y="92" width="154" height="22"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstItem="2cA-zW-Cp1" firstAttribute="top" secondItem="GTq-X1-moS" secondAttribute="bottom" id="0Nj-3B-uDI"/>
+                                    <constraint firstItem="2cA-zW-Cp1" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.757937" id="2lz-4R-DZA"/>
+                                    <constraint firstItem="w8B-E0-RQT" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.611111" id="33d-s1-88F"/>
+                                    <constraint firstAttribute="trailing" secondItem="iho-07-4Tu" secondAttribute="trailing" constant="98.000000000000028" id="3YR-0c-ITd"/>
+                                    <constraint firstItem="iho-07-4Tu" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="4he-eS-PiU"/>
+                                    <constraint firstItem="iho-07-4Tu" firstAttribute="top" secondItem="IUv-cb-Sjl" secondAttribute="bottom" id="5Q1-4D-Y6z"/>
+                                    <constraint firstItem="GTq-X1-moS" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="6Di-kV-RJe"/>
+                                    <constraint firstItem="IUv-cb-Sjl" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="88C-2D-Qhr"/>
+                                    <constraint firstItem="iho-07-4Tu" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.611111" id="ByZ-7q-dpG"/>
+                                    <constraint firstItem="sPd-dO-aSs" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.535714" id="DFR-hu-xea"/>
+                                    <constraint firstItem="iho-07-4Tu" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.127273" id="DZi-he-ar1"/>
+                                    <constraint firstItem="GTq-X1-moS" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.936275" id="GoJ-Al-OqJ"/>
+                                    <constraint firstItem="w8B-E0-RQT" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.127273" id="MvN-CP-bXj"/>
+                                    <constraint firstItem="2cA-zW-Cp1" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.127273" id="RQB-zv-8rs"/>
+                                    <constraint firstItem="IUv-cb-Sjl" firstAttribute="top" secondItem="2cA-zW-Cp1" secondAttribute="bottom" constant="19" id="Tw3-7k-GqG"/>
+                                    <constraint firstItem="w8B-E0-RQT" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="V0e-gO-IGJ"/>
+                                    <constraint firstItem="GTq-X1-moS" firstAttribute="top" secondItem="SRE-8x-Evg" secondAttribute="top" id="Wu1-Qz-Vqm"/>
+                                    <constraint firstAttribute="trailing" secondItem="GTq-X1-moS" secondAttribute="trailing" constant="13" id="XaZ-lB-s9c"/>
+                                    <constraint firstItem="2cA-zW-Cp1" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="Xbg-Dy-2ii"/>
+                                    <constraint firstItem="sPd-dO-aSs" firstAttribute="leading" secondItem="SRE-8x-Evg" secondAttribute="leading" id="a9c-mG-Ba2"/>
+                                    <constraint firstItem="sPd-dO-aSs" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.145455" id="dYW-tT-zHy"/>
+                                    <constraint firstAttribute="trailing" secondItem="2cA-zW-Cp1" secondAttribute="trailing" constant="61.000000000000028" id="dma-gT-oYo"/>
+                                    <constraint firstAttribute="trailing" secondItem="sPd-dO-aSs" secondAttribute="trailing" constant="117.00000000000003" id="kAI-8d-XK6"/>
+                                    <constraint firstAttribute="trailing" secondItem="w8B-E0-RQT" secondAttribute="trailing" constant="98.000000000000028" id="km3-xh-YDh"/>
+                                    <constraint firstAttribute="trailing" secondItem="IUv-cb-Sjl" secondAttribute="trailing" constant="48.000000000000028" id="mG6-iK-Be0"/>
+                                    <constraint firstItem="IUv-cb-Sjl" firstAttribute="width" secondItem="SRE-8x-Evg" secondAttribute="width" multiplier="0.809524" id="mpz-FQ-ESn"/>
+                                    <constraint firstItem="w8B-E0-RQT" firstAttribute="top" secondItem="sPd-dO-aSs" secondAttribute="bottom" id="ogX-HJ-T9x"/>
+                                    <constraint firstItem="GTq-X1-moS" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.145455" id="v32-9d-y5I"/>
+                                    <constraint firstItem="sPd-dO-aSs" firstAttribute="top" secondItem="iho-07-4Tu" secondAttribute="bottom" constant="11" id="wGN-98-RMp"/>
+                                    <constraint firstItem="IUv-cb-Sjl" firstAttribute="height" secondItem="SRE-8x-Evg" secondAttribute="height" multiplier="0.145455" id="xMn-ll-RyW"/>
+                                </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="23V-Sw-dSJ">
-                                <rect key="frame" x="12" y="467" width="369" height="292"/>
+                                <rect key="frame" x="12" y="474.66666666666669" width="461.33333333333331" height="244.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wSQ-lG-frk">
-                                        <rect key="frame" x="0.0" y="50" width="369" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="wSQ-lG-frk">
+                                        <rect key="frame" x="0.0" y="50" width="461.33333333333331" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wSQ-lG-frk" id="2pR-cU-5eN">
-                                            <rect key="frame" x="0.0" y="0.0" width="369" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="461.33333333333331" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-TI-xwj">
@@ -297,10 +323,10 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-Sk-V9u" userLabel="0-C-View">
-                                <rect key="frame" x="221" y="342" width="162" height="58"/>
+                                <rect key="frame" x="276.33333333333331" y="343.33333333333331" width="199" height="61"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jr-7r-t5u">
-                                        <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="58"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="61"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="0">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -308,7 +334,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faU-Dt-Un2">
-                                        <rect key="frame" x="54.333333333333321" y="0.0" width="105.66666666666669" height="58"/>
+                                        <rect key="frame" x="67" y="0.0" width="130" height="61"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="c">
                                             <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
@@ -374,7 +400,7 @@
                 <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" id="8Xf-Cm-OfF" customClass="TabBarController" customModule="DoFU" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Caf-d9-3U5"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" itemPositioning="centered" itemSpacing="23" id="8Tx-eY-IaR">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" itemSpacing="23" id="8Tx-eY-IaR">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.18109270929999999" green="0.2231942415" blue="0.25490707159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -406,7 +432,7 @@
                     <tabBarItem key="tabBarItem" title="calc" image="keyboard.macwindow" catalog="system" id="cMn-cu-N1w"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="F9N-xQ-rer">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
@@ -428,7 +454,7 @@
                     <tabBarItem key="tabBarItem" title="items" image="scroll" catalog="system" id="uqb-S1-77K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tv2-Rg-Q4W">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
@@ -450,7 +476,7 @@
                     <tabBarItem key="tabBarItem" title="chart" image="chart.pie" catalog="system" id="Six-od-leZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ic2-OH-Oqc">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
