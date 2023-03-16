@@ -95,78 +95,97 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJd-Tw-uxD">
                                         <rect key="frame" x="60.5" y="3" width="54" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="2">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="Hoq-np-FUe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-g8-ule">
                                         <rect key="frame" x="117.5" y="3" width="54.5" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="3">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="fT5-V0-gX5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otJ-1y-Jib">
                                         <rect key="frame" x="60.5" y="145" width="54" height="68.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="8">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="qPv-ib-khj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SP5-d3-qp2">
                                         <rect key="frame" x="3" y="74" width="54.5" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="4">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="Ccp-Jb-AqO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ml-s1-edl">
                                         <rect key="frame" x="117.5" y="74" width="54.5" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="6">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="CnA-cX-iFD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-X9-UT0">
                                         <rect key="frame" x="117.5" y="145" width="54.5" height="68.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="9">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="lD2-BU-LoK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AP-yG-AJB">
                                         <rect key="frame" x="3" y="145" width="54.5" height="68.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="7">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="tJ2-71-ATg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYm-Zm-5I5">
                                         <rect key="frame" x="3" y="3" width="54.5" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="1">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="lXX-C9-lBB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0g-T3-lTW">
                                         <rect key="frame" x="60.5" y="74" width="54" height="68"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="5">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="e2g-r2-pxn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="otJ-1y-Jib" firstAttribute="width" secondItem="PYm-Zm-5I5" secondAttribute="width" id="0Hs-D2-txA"/>
                                     <constraint firstItem="aeu-g8-ule" firstAttribute="width" secondItem="PYm-Zm-5I5" secondAttribute="width" id="1AT-7J-s9x"/>
@@ -212,11 +231,14 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-RI-WIe">
                                 <rect key="frame" x="233.5" y="439.5" width="168.5" height="64"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Save">
-                                    <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="49"/>
-                                    <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
+                                <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="49"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="kMF-u7-3wE"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="23V-Sw-dSJ">
                                 <rect key="frame" x="10" y="513.5" width="394" height="289.5"/>
@@ -268,22 +290,27 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jr-7r-t5u">
                                         <rect key="frame" x="0.0" y="0.0" width="54.5" height="67.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="0">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="numberPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="hnU-Yp-NEE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faU-Dt-Un2">
                                         <rect key="frame" x="57.5" y="0.0" width="111" height="67.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="c">
-                                            <fontDescription key="titleFontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
-                                            <color key="baseBackgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
+                                        <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="c"/>
+                                        <connections>
+                                            <action selector="cPressed:" destination="QhU-zi-2JE" eventType="touchUpInside" id="7fc-dQ-TTN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="7Jr-7r-t5u" firstAttribute="top" secondItem="0C4-Sk-V9u" secondAttribute="top" id="7B1-9w-hfY"/>
                                     <constraint firstAttribute="bottom" secondItem="faU-Dt-Un2" secondAttribute="bottom" id="96p-d2-G9E"/>
@@ -338,6 +365,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GTq-X1-moS" secondAttribute="trailing" id="87N-tg-Jmm"/>
                                     <constraint firstItem="w8B-E0-RQT" firstAttribute="top" secondItem="sPd-dO-aSs" secondAttribute="bottom" constant="10" id="BFc-jj-bjY"/>
@@ -395,7 +423,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calc Screen" id="2mb-Ma-WKh"/>
                     <connections>
+                        <outlet property="sumLabel" destination="2kf-Gu-0Zg" id="qAC-sA-hdn"/>
                         <outlet property="tableView" destination="23V-Sw-dSJ" id="LXA-Aj-Ncn"/>
+                        <outletCollection property="numberFromKeyboard" destination="PYm-Zm-5I5" collectionClass="NSMutableArray" id="fvW-uh-5LO"/>
+                        <outletCollection property="numberFromKeyboard" destination="EJd-Tw-uxD" collectionClass="NSMutableArray" id="QMP-1k-KEi"/>
+                        <outletCollection property="numberFromKeyboard" destination="aeu-g8-ule" collectionClass="NSMutableArray" id="Ihe-vo-hIA"/>
+                        <outletCollection property="numberFromKeyboard" destination="SP5-d3-qp2" collectionClass="NSMutableArray" id="Hoe-jL-tR5"/>
+                        <outletCollection property="numberFromKeyboard" destination="g0g-T3-lTW" collectionClass="NSMutableArray" id="9eR-Sp-F2L"/>
+                        <outletCollection property="numberFromKeyboard" destination="9ml-s1-edl" collectionClass="NSMutableArray" id="vqV-Qd-K7T"/>
+                        <outletCollection property="numberFromKeyboard" destination="4AP-yG-AJB" collectionClass="NSMutableArray" id="0ae-PQ-vwC"/>
+                        <outletCollection property="numberFromKeyboard" destination="otJ-1y-Jib" collectionClass="NSMutableArray" id="sKc-pz-kCP"/>
+                        <outletCollection property="numberFromKeyboard" destination="vyX-X9-UT0" collectionClass="NSMutableArray" id="9Vx-b4-EkI"/>
+                        <outletCollection property="numberFromKeyboard" destination="7Jr-7r-t5u" collectionClass="NSMutableArray" id="ko3-ag-TMx"/>
+                        <outletCollection property="numberFromKeyboard" destination="faU-Dt-Un2" collectionClass="NSMutableArray" id="h43-UO-FH5"/>
+                        <outletCollection property="numberFromKeyboard" destination="Zaa-RI-WIe" collectionClass="NSMutableArray" id="Roa-Eh-g3G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OiI-Sm-Jtx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
