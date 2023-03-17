@@ -284,6 +284,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QhU-zi-2JE" id="Tai-pB-UMK"/>
+                                    <outlet property="delegate" destination="QhU-zi-2JE" id="KFu-Vs-rhf"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-Sk-V9u" userLabel="0-C-View">
                                 <rect key="frame" x="233.5" y="370" width="170.5" height="67.5"/>

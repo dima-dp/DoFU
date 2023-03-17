@@ -6,13 +6,16 @@
 //
 
 import UIKit
-import Realm
+import RealmSwift
 
 class CalcViewConroller: UIViewController {
     
+    let realm = try! Realm()
+    var donatesArray: Results<Donate>!
+    
     let buttonsCornerRadius = 5.0
     var stillTypying = false
-    var sumValue = ""
+    var sumValue = 0
     var date = Date()
 
 
@@ -32,6 +35,7 @@ class CalcViewConroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        donatesArray = realm.objects(Donate.self)
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -61,11 +65,21 @@ class CalcViewConroller: UIViewController {
     
     @IBAction func savePressed(_ sender: UIButton) {
         
-        sumValue = sumLabel.text!
+        sumValue = Int(sumLabel.text!)!
         date = Date()   // Add working with date
+        
+        let donate = Donate(value: [date, sumValue])
+        try! realm.write {
+            realm.add(donate)
+        }
+        
+        // add alert Saved
         
         sumLabel.text = "0"
         stillTypying = false
+        self.tableView.reloadData()
+        
+        
     }
 }
 
@@ -74,13 +88,17 @@ class CalcViewConroller: UIViewController {
 
 extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return donatesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CalcTableViewCell
-        cell.dateLabel.text = "01.11.2023"
-        cell.sumLabel.text = "100 000"
+        
+        let sortedDonates = donatesArray.sorted { $0.date > $1.date }
+        let donate = sortedDonates[indexPath.row]
+        
+        cell.dateLabel.text = donate.date.description
+        cell.sumLabel.text = donate.sum.description
         
         cell.backgroundColor = .systemGray2
         
