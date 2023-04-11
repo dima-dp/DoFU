@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import Foundation
 
 class CalcViewConroller: UIViewController {
     
@@ -97,8 +98,15 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
         // reversing array of donates to sort it by date (last in top):
         let donate = donatesArray.reversed()[indexPath.row]
         
-        
-        cell.dateLabel.text = donate.date.description
+       //formatting date to show it in short way:
+        let dateForLabel = (donate.date as Date?)
+        let formattedDate = dateForLabel?.formatted(
+            .dateTime
+                .month()
+                .day()
+                .year()
+        )
+        cell.dateLabel.text = formattedDate
         cell.sumLabel.text = donate.sum.description
         
         cell.backgroundColor = .systemGray2
@@ -125,7 +133,7 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
         return true
     }
     
-// MARK: -> Adding delete function (by swipe):
+    // MARK: -> Adding delete function (by swipe):
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let donate = donatesArray.reversed()[indexPath.row]
