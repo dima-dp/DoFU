@@ -276,7 +276,7 @@
                                             <constraint firstItem="rnS-hQ-28N" firstAttribute="centerY" secondItem="wSQ-lG-frk" secondAttribute="centerY" id="cph-Ci-W8c"/>
                                             <constraint firstItem="2iB-TI-xwj" firstAttribute="centerY" secondItem="wSQ-lG-frk" secondAttribute="centerY" constant="1.1666660308837891" id="dyg-xD-x1t"/>
                                             <constraint firstItem="2iB-TI-xwj" firstAttribute="height" secondItem="wSQ-lG-frk" secondAttribute="height" multiplier="0.549618" id="fPJ-bE-Poh"/>
-                                            <constraint firstItem="2iB-TI-xwj" firstAttribute="width" secondItem="wSQ-lG-frk" secondAttribute="width" multiplier="0.498567" id="q13-Kk-aNn"/>
+                                            <constraint firstItem="2iB-TI-xwj" firstAttribute="width" secondItem="wSQ-lG-frk" secondAttribute="width" multiplier="0.498567" id="q13-Kk-aNn" userLabel="Date Label.width = 0.7 × width"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="dateLabel" destination="2iB-TI-xwj" id="J5M-9A-2nu"/>

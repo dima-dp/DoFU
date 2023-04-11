@@ -17,8 +17,8 @@ class CalcViewConroller: UIViewController {
     var stillTypying = false
     var sumValue = 0
     var date = Date()
-
-
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sumLabel: UILabel! {
         didSet {
@@ -41,7 +41,7 @@ class CalcViewConroller: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .darkGray
         tableView.layer.cornerRadius = 5
-
+        
     }
     
     
@@ -73,7 +73,7 @@ class CalcViewConroller: UIViewController {
             realm.add(donate)
         }
         
-        // add alert Saved
+        // Do I need to add alert Saved?
         
         sumLabel.text = "0"
         stillTypying = false
@@ -94,8 +94,9 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CalcTableViewCell
         
-        let sortedDonates = donatesArray.sorted { $0.date > $1.date }
-        let donate = sortedDonates[indexPath.row]
+        // reversing array of donates to sort it by date (last in top):
+        let donate = donatesArray.reversed()[indexPath.row]
+        
         
         cell.dateLabel.text = donate.date.description
         cell.sumLabel.text = donate.sum.description
@@ -120,4 +121,21 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
         50
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+// MARK: -> Adding delete function (by swipe):
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let donate = donatesArray.reversed()[indexPath.row]
+            try! realm.write {
+                //realm.delete(deletedValue)
+                realm.delete(realm.objects(Donate.self).filter("date=%@",donatesArray.reversed()[indexPath.row].date))
+            }
+            tableView.reloadData()
+        }
+    }
+    
 }
+
