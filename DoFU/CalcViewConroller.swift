@@ -21,6 +21,8 @@ class CalcViewConroller: UIViewController {
     
     
     @IBOutlet weak var totalDonated: UILabel!
+    @IBOutlet weak var donatedThisMonth: UILabel!
+    @IBOutlet weak var donatedLastMonth: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sumLabel: UILabel! {
@@ -89,25 +91,44 @@ class CalcViewConroller: UIViewController {
         
     }
     
-// Mark: -> Private function to update Labels with info about donates
+    // Mark: -> Private function to update Labels with info about donates
     private func updateLabelsWithDonatesStatistic() {
-        let date = Date()
-        
-        let currMonths = Calendar.current.dateComponents([.month], from: date)
         
         updateTotalDonated()
-        updateDonatedLastMonths(currentMonths: currMonths.month!)
-        updateDonatedThisMonths(currentMonths: currMonths.month!)
+        updateDonatedLastMonths()
+        updateDonatedThisMonths()
     }
     
     private func updateTotalDonated() {
-        totalDonated.text = "1"
+        let totalSumOfDonates: Int = realm.objects(Donate.self).sum(ofProperty: "sum")
+        totalDonated.text = totalSumOfDonates.description
         
     }
-    private func updateDonatedLastMonths(currentMonths: Int) {
+    private func updateDonatedLastMonths() {
+        
+        let currentDate = Date()
+        var date = Calendar.current.dateComponents([.month, .year], from: currentDate)
+        date.day = 1
+        date.hour = 00
+        let endDate = Calendar.current.date(from: date) as Any
+        
+        date.month! -= 1
+        let startDate = Calendar.current.date(from: date) as Any
+        
+        let sumDonatedThisMonths: Int = realm.objects(Donate.self).filter("self.date >= %@ && self.date < %@", startDate, endDate).sum(ofProperty: "sum")
+        donatedLastMonth.text = sumDonatedThisMonths.description
         
     }
-    private func updateDonatedThisMonths(currentMonths: Int) {
+    private func updateDonatedThisMonths() {
+        
+        let currentDate = Date()
+        var date = Calendar.current.dateComponents([.month, .year], from: currentDate)
+        date.day = 1
+        date.hour = 00
+        let startDate = Calendar.current.date(from: date) as Any
+        
+        let sumDonatedThisMonths: Int = realm.objects(Donate.self).filter("self.date >= %@", startDate).sum(ofProperty: "sum")
+        donatedThisMonth.text = sumDonatedThisMonths.description
         
     }
     
@@ -125,10 +146,10 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CalcTableViewCell
         
-       // reversing array of donates to sort it by date (last in top):
+        // reversing array of donates to sort it by date (last in top):
         let donate = donatesArray.reversed()[indexPath.row]
         
-       //formatting date to show it in short way:
+        //formatting date to show it in short way:
         let dateForLabel = (donate.date as Date?)
         let formattedDate = dateForLabel?.formatted(
             .dateTime
@@ -166,11 +187,12 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
     // MARK: -> Adding delete function (by swipe):
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let donate = donatesArray.reversed()[indexPath.row]
+            // let donate = donatesArray.reversed()[indexPath.row]
             try! realm.write {
                 realm.delete(realm.objects(Donate.self).filter("date=%@",donatesArray.reversed()[indexPath.row].date))
             }
             tableView.reloadData()
+            updateLabelsWithDonatesStatistic()
         }
     }
     

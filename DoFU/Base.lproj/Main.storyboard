@@ -349,7 +349,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated this months:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl" userLabel="DonatedThisMonths">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated this month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl" userLabel="DonatedThisMonth">
                                         <rect key="frame" x="0.0" y="69.5" width="209" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -427,6 +427,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calc Screen" id="2mb-Ma-WKh"/>
                     <connections>
+                        <outlet property="donatedLastMonth" destination="2cA-zW-Cp1" id="ICE-Nw-3wB"/>
+                        <outlet property="donatedThisMonth" destination="iho-07-4Tu" id="Uol-w8-LvO"/>
                         <outlet property="sumLabel" destination="2kf-Gu-0Zg" id="qAC-sA-hdn"/>
                         <outlet property="tableView" destination="23V-Sw-dSJ" id="LXA-Aj-Ncn"/>
                         <outlet property="totalDonated" destination="w8B-E0-RQT" id="opR-xz-5vj"/>
