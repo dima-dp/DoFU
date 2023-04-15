@@ -20,6 +20,8 @@ class CalcViewConroller: UIViewController {
     var date = Date()
     
     
+    @IBOutlet weak var totalDonated: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sumLabel: UILabel! {
         didSet {
@@ -36,6 +38,8 @@ class CalcViewConroller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateLabelsWithDonatesStatistic()
+        
         donatesArray = realm.objects(Donate.self)
         
         tableView.delegate = self
@@ -67,6 +71,7 @@ class CalcViewConroller: UIViewController {
     @IBAction func savePressed(_ sender: UIButton) {
         
         sumValue = Int(sumLabel.text!)!
+        guard sumValue != 0 else { return }
         date = Date()   // Add working with date
         
         let donate = Donate(value: [date, sumValue])
@@ -79,9 +84,34 @@ class CalcViewConroller: UIViewController {
         sumLabel.text = "0"
         stillTypying = false
         self.tableView.reloadData()
+        updateLabelsWithDonatesStatistic()
         
         
     }
+    
+// Mark: -> Private function to update Labels with info about donates
+    private func updateLabelsWithDonatesStatistic() {
+        let date = Date()
+        
+        let currMonths = Calendar.current.dateComponents([.month], from: date)
+        
+        updateTotalDonated()
+        updateDonatedLastMonths(currentMonths: currMonths.month!)
+        updateDonatedThisMonths(currentMonths: currMonths.month!)
+    }
+    
+    private func updateTotalDonated() {
+        totalDonated.text = "1"
+        
+    }
+    private func updateDonatedLastMonths(currentMonths: Int) {
+        
+    }
+    private func updateDonatedThisMonths(currentMonths: Int) {
+        
+    }
+    
+    
 }
 
 
@@ -95,7 +125,7 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CalcTableViewCell
         
-        // reversing array of donates to sort it by date (last in top):
+       // reversing array of donates to sort it by date (last in top):
         let donate = donatesArray.reversed()[indexPath.row]
         
        //formatting date to show it in short way:
@@ -138,7 +168,6 @@ extension CalcViewConroller: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             let donate = donatesArray.reversed()[indexPath.row]
             try! realm.write {
-                //realm.delete(deletedValue)
                 realm.delete(realm.objects(Donate.self).filter("date=%@",donatesArray.reversed()[indexPath.row].date))
             }
             tableView.reloadData()

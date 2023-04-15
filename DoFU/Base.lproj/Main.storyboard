@@ -85,7 +85,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-Gu-0Zg" userLabel="Display 0">
                                 <rect key="frame" x="12.5" y="92" width="389" height="58.5"/>
-                                <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.93345662375304606" green="0.70897492217233848" blue="0.28311783309547767" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,7 +231,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-RI-WIe">
                                 <rect key="frame" x="233.5" y="439.5" width="168.5" height="64"/>
-                                <color key="backgroundColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.93432122470000001" green="0.70854949950000001" blue="0.28220456840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="49"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -340,7 +340,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8B-E0-RQT">
                                         <rect key="frame" x="0.0" y="178" width="209" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.74665838480000002" green="0.56685173509999998" blue="0.22733625769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated last month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="GTq-X1-moS">
@@ -349,7 +349,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To donate this month:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donated this months:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-cb-Sjl" userLabel="DonatedThisMonths">
                                         <rect key="frame" x="0.0" y="69.5" width="209" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -358,13 +358,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-zW-Cp1">
                                         <rect key="frame" x="0.0" y="29" width="209" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.74665838480000002" green="0.56685173509999998" blue="0.22733625769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iho-07-4Tu">
                                         <rect key="frame" x="0.0" y="103.5" width="209" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <color key="textColor" red="0.80529373879999999" green="0.61410087349999998" blue="0.23908522730000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.74665838480000002" green="0.56685173509999998" blue="0.22733625769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -429,6 +429,7 @@
                     <connections>
                         <outlet property="sumLabel" destination="2kf-Gu-0Zg" id="qAC-sA-hdn"/>
                         <outlet property="tableView" destination="23V-Sw-dSJ" id="LXA-Aj-Ncn"/>
+                        <outlet property="totalDonated" destination="w8B-E0-RQT" id="opR-xz-5vj"/>
                         <outletCollection property="numberFromKeyboard" destination="PYm-Zm-5I5" collectionClass="NSMutableArray" id="fvW-uh-5LO"/>
                         <outletCollection property="numberFromKeyboard" destination="EJd-Tw-uxD" collectionClass="NSMutableArray" id="QMP-1k-KEi"/>
                         <outletCollection property="numberFromKeyboard" destination="aeu-g8-ule" collectionClass="NSMutableArray" id="Ihe-vo-hIA"/>
