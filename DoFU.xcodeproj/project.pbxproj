@@ -20,6 +20,8 @@
 		F44719A929B52D6E00C5DBC1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44719A829B52D6E00C5DBC1 /* TabBarController.swift */; };
 		F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */; };
 		F487E85929C4ACC50027B4AE /* DonatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487E85829C4ACC50027B4AE /* DonatesModel.swift */; };
+		F487F8EB29F1B9CB006222E8 /* ItemsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487F8EA29F1B9CB006222E8 /* ItemsCollectionView.swift */; };
+		F487F8ED29F1BC43006222E8 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487F8EC29F1BC43006222E8 /* ItemsCollectionViewCell.swift */; };
 		F4FB1EF929C0B29000C3C421 /* CalcTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB1EF829C0B28B00C3C421 /* CalcTableViewCell.swift */; };
 		F4FB1EFD29C0BDCB00C3C421 /* HeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FB1EFC29C0BDCB00C3C421 /* HeaderTableView.xib */; };
 		F4FB1EFF29C0BF4500C3C421 /* HeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB1EFE29C0BF4500C3C421 /* HeaderTableView.swift */; };
@@ -43,6 +45,8 @@
 		F44719A829B52D6E00C5DBC1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "liberate-ukraine.json"; sourceTree = "<group>"; };
 		F487E85829C4ACC50027B4AE /* DonatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatesModel.swift; sourceTree = "<group>"; };
+		F487F8EA29F1B9CB006222E8 /* ItemsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionView.swift; sourceTree = "<group>"; };
+		F487F8EC29F1BC43006222E8 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F4FB1EF829C0B28B00C3C421 /* CalcTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcTableViewCell.swift; sourceTree = "<group>"; };
 		F4FB1EFC29C0BDCB00C3C421 /* HeaderTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableView.xib; sourceTree = "<group>"; };
 		F4FB1EFE29C0BF4500C3C421 /* HeaderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				F438BE0529B529FA0097EFA5 /* ChartsViewController.swift */,
 				F4FB1EFE29C0BF4500C3C421 /* HeaderTableView.swift */,
 				F438BE0329B529C80097EFA5 /* ItemsViewController.swift */,
+				F487F8EA29F1B9CB006222E8 /* ItemsCollectionView.swift */,
+				F487F8EC29F1BC43006222E8 /* ItemsCollectionViewCell.swift */,
 				F44719A829B52D6E00C5DBC1 /* TabBarController.swift */,
 				F447191E299E971300B6C3DA /* ViewController.swift */,
 			);
@@ -274,6 +280,8 @@
 				F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */,
 				F447191F299E971300B6C3DA /* ViewController.swift in Sources */,
 				F4FB1EFF29C0BF4500C3C421 /* HeaderTableView.swift in Sources */,
+				F487F8ED29F1BC43006222E8 /* ItemsCollectionViewCell.swift in Sources */,
+				F487F8EB29F1B9CB006222E8 /* ItemsCollectionView.swift in Sources */,
 				F438BE0629B529FA0097EFA5 /* ChartsViewController.swift in Sources */,
 				F487E85929C4ACC50027B4AE /* DonatesModel.swift in Sources */,
 				F44719A929B52D6E00C5DBC1 /* TabBarController.swift in Sources */,
