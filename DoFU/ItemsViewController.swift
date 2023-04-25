@@ -22,7 +22,7 @@ class ItemsViewController: UIViewController {
         itemsCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 70).isActive = true
         itemsCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
-        
+        itemsCollectionView.setItems(cells: Item.mockItems())
     }
     
 }
