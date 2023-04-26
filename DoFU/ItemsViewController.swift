@@ -15,13 +15,18 @@ class ItemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Adding CollectonView on ItemsVC
         view.addSubview(itemsCollectionView)
         
+        // Creating constrains for CollectionView
         itemsCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         itemsCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         itemsCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 70).isActive = true
         itemsCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
+        
+        // Using test data for CollectionView
         itemsCollectionView.setItems(cells: Item.mockItems())
     }
     

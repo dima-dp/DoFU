@@ -14,17 +14,22 @@ class ItemsCollectionView: UICollectionView {
     
     init() {
         let layout = UICollectionViewFlowLayout()
+        
         layout.scrollDirection = .horizontal
         super.init(frame: .zero, collectionViewLayout: layout)
+        
+        self.isPagingEnabled = true
+        
         backgroundColor = .systemGray
+        
         delegate = self
         dataSource = self
         
         register(ItemsCollectionViewCell.self, forCellWithReuseIdentifier: ItemsCollectionViewCell.reuseID )
         
         translatesAutoresizingMaskIntoConstraints = false
-        layout.minimumLineSpacing = Constants.itemsMinimumLineSpacing
-        contentInset = UIEdgeInsets(top: 0, left: Constants.leftDistanceToView, bottom: 0, right: Constants.rightDistanceToView)
+        layout.minimumLineSpacing = 0
+        contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     func setItems(cells: [Item]) {
@@ -40,6 +45,7 @@ class ItemsCollectionView: UICollectionView {
 
 
 extension ItemsCollectionView:  UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return items.count
@@ -51,11 +57,13 @@ extension ItemsCollectionView:  UICollectionViewDelegate, UICollectionViewDataSo
         cell.mainImageView.image = items[indexPath.row].itemImage
         cell.progress.progress = 0.5
         
+      
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: Constants.itemsItemWidth, height: frame.height * 0.9)
+        
+        return CGSize(width: Constants.itemsItemWidth, height: frame.height)
     }
 
 

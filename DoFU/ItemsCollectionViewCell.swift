@@ -12,15 +12,15 @@ class ItemsCollectionViewCell: UICollectionViewCell {
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        label.textColor = .black
+        label.font = UIFont.systemFont(ofSize: 35, weight: .bold)
+        label.textColor = .green
+        label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let mainImageView: UIImageView = {
         let imageView = UIImageView()
-        //imageView.backgroundColor = .red
         imageView.contentMode = .scaleToFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -42,13 +42,28 @@ class ItemsCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(progress)
         backgroundColor = .lightGray
         
-        mainImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        mainImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        mainImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.leftDistanceToView).isActive = true
+        nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.rightDistanceToView).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 30).isActive = true
+        
+        mainImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.leftDistanceToView).isActive = true
+        mainImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.rightDistanceToView).isActive = true
+        mainImageView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,constant: 20).isActive = true
         mainImageView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 2 / 5).isActive = true
         
+        progress.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.leftDistanceToView).isActive = true
+        progress.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.rightDistanceToView).isActive = true
+        progress.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: 30).isActive = true
     }
     
+    override func layoutSubviews() {
+        mainImageView.layer.cornerRadius = 50
+        mainImageView.layer.shadowRadius = 9
+        mainImageView.layer.shadowOpacity = 0.3
+        mainImageView.layer.shadowOffset = CGSize(width: 5, height: 8)
+        mainImageView.clipsToBounds = false
+        
+    }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
