@@ -102,7 +102,7 @@ class CalcViewConroller: UIViewController {
     private func updateTotalDonated() {
         let totalSumOfDonates: Int = realm.objects(Donate.self).sum(ofProperty: "sum")
         totalDonated.text = totalSumOfDonates.description
-        
+        TransferService.shared.sum = Int(totalSumOfDonates.description) ?? 0
     }
     private func updateDonatedLastMonths() {
         

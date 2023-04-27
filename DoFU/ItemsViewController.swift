@@ -30,4 +30,11 @@ class ItemsViewController: UIViewController {
         itemsCollectionView.setItems(cells: Item.mockItems())
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+       // print(TransferService.shared.sum)
+      
+   
+    }
+    
 }

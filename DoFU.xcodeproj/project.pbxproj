@@ -19,6 +19,9 @@
 		F4471927299E971500B6C3DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4471925299E971500B6C3DA /* LaunchScreen.storyboard */; };
 		F44719A929B52D6E00C5DBC1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44719A829B52D6E00C5DBC1 /* TabBarController.swift */; };
 		F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */ = {isa = PBXBuildFile; fileRef = F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */; };
+		F48377BF29FAF83B00E91144 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48377BE29FAF83B00E91144 /* Singleton.swift */; };
+		F48377C129FB03AA00E91144 /* checkmark.json in Resources */ = {isa = PBXBuildFile; fileRef = F48377C029FB03AA00E91144 /* checkmark.json */; };
+		F48377C329FB03B300E91144 /* progress-bar.json in Resources */ = {isa = PBXBuildFile; fileRef = F48377C229FB03B300E91144 /* progress-bar.json */; };
 		F487E85929C4ACC50027B4AE /* DonatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487E85829C4ACC50027B4AE /* DonatesModel.swift */; };
 		F487F8EB29F1B9CB006222E8 /* ItemsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487F8EA29F1B9CB006222E8 /* ItemsCollectionView.swift */; };
 		F487F8ED29F1BC43006222E8 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F487F8EC29F1BC43006222E8 /* ItemsCollectionViewCell.swift */; };
@@ -44,6 +47,9 @@
 		F4471928299E971500B6C3DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F44719A829B52D6E00C5DBC1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "liberate-ukraine.json"; sourceTree = "<group>"; };
+		F48377BE29FAF83B00E91144 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		F48377C029FB03AA00E91144 /* checkmark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkmark.json; sourceTree = "<group>"; };
+		F48377C229FB03B300E91144 /* progress-bar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "progress-bar.json"; sourceTree = "<group>"; };
 		F487E85829C4ACC50027B4AE /* DonatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonatesModel.swift; sourceTree = "<group>"; };
 		F487F8EA29F1B9CB006222E8 /* ItemsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionView.swift; sourceTree = "<group>"; };
 		F487F8EC29F1BC43006222E8 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,7 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				F4FB1EF829C0B28B00C3C421 /* CalcTableViewCell.swift */,
+				F48377BE29FAF83B00E91144 /* Singleton.swift */,
 				F44EE84B29B50CEA005559A7 /* liberate-ukraine.json */,
+				F48377C029FB03AA00E91144 /* checkmark.json */,
+				F48377C229FB03B300E91144 /* progress-bar.json */,
 				F447191C299E971300B6C3DA /* SceneDelegate.swift */,
 				F447191A299E971300B6C3DA /* AppDelegate.swift */,
 				F4471923299E971500B6C3DA /* Assets.xcassets */,
@@ -221,8 +230,10 @@
 				F4471927299E971500B6C3DA /* LaunchScreen.storyboard in Resources */,
 				F44EE84C29B50CEB005559A7 /* liberate-ukraine.json in Resources */,
 				F4471924299E971500B6C3DA /* Assets.xcassets in Resources */,
+				F48377C329FB03B300E91144 /* progress-bar.json in Resources */,
 				F4FB1EFD29C0BDCB00C3C421 /* HeaderTableView.xib in Resources */,
 				F4471922299E971300B6C3DA /* Main.storyboard in Resources */,
+				F48377C129FB03AA00E91144 /* checkmark.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +291,7 @@
 				F438BE0229B510920097EFA5 /* CalcViewConroller.swift in Sources */,
 				F447191F299E971300B6C3DA /* ViewController.swift in Sources */,
 				F4FB1EFF29C0BF4500C3C421 /* HeaderTableView.swift in Sources */,
+				F48377BF29FAF83B00E91144 /* Singleton.swift in Sources */,
 				F487F8ED29F1BC43006222E8 /* ItemsCollectionViewCell.swift in Sources */,
 				F487F8EB29F1B9CB006222E8 /* ItemsCollectionView.swift in Sources */,
 				F438BE0629B529FA0097EFA5 /* ChartsViewController.swift in Sources */,

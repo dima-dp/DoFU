@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Lottie
 
 class ItemsCollectionView: UICollectionView {
     
-
     var items = [Item]()
+    var currentCell = ItemsCollectionViewCell()
+    var currentItem = Int()
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -32,6 +34,7 @@ class ItemsCollectionView: UICollectionView {
         contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
+    
     func setItems(cells: [Item]) {
         
         self.items = cells
@@ -50,23 +53,27 @@ extension ItemsCollectionView:  UICollectionViewDelegate, UICollectionViewDataSo
         
         return items.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(withReuseIdentifier: ItemsCollectionViewCell.reuseID, for: indexPath) as! ItemsCollectionViewCell
         cell.nameLabel.text = items[indexPath.row].name
         cell.mainImageView.image = items[indexPath.row].itemImage
-        cell.progress.progress = 0.5
         
-      
-        return cell
+        //cell.progress.progress = 0.5
+        currentCell = cell
+        currentItem = indexPath.row
+        
+     return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: Constants.itemsItemWidth, height: frame.height)
     }
-
-
     
-    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        currentCell.play()
+        print(items[currentItem].name)
+    }
 }
